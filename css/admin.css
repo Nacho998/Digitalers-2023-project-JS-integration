@@ -1,0 +1,107 @@
+:root {
+    --primary-color-admin: #f3f3f3;
+    --secondary-color-admin: #566573;
+    --tertiary-color-admin: #5D6D7E;
+    --orange: #DC7633;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: min(1000px, 100% - 3rem);
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-color-admin);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.wrapper > button {
+    width: 100px;
+    padding: 5px;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--primary-color-admin);
+    background: var(--secondary-color-admin);
+}
+
+th {
+    background: var(--orange);
+    color: #24242c;
+}
+
+th,
+td {
+    padding: 1rem;
+}
+
+tr {
+    &:not(:last-child){
+        border-bottom: 1px solid var(--orange);
+    }
+}
+
+tr:nth-of-type(2n) {
+    background: var(--tertiary-color-admin);
+}
+
+table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+table .btn-admin {
+    display: flex;
+    gap: .5rem;
+}
+
+table .btn-admin button {
+    padding: .5rem .75rem;
+}
+
+.form-admin-products input:focus, 
+.form-admin-products textarea:focus,
+.form-admin-products select:focus {
+    box-shadow: 0 0 .3rem .1rem var(--orange);
+    border: none;
+}
+
+.text-area-admin {
+    resize: none;
+}
+
+.add-btn {
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    transition: all .2s;
+}
+
+.add-btn:hover {
+    background-color: transparent;
+    border: 1px solid var(--orange);
+    color: var(--primary-color-admin);
+    backdrop-filter: blur(5px);
+}

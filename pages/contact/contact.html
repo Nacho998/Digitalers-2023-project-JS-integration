@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU-Dealers - Contacto</title>
+    <link rel="shortcut icon" href="/assets/images/logo-header.png">
+    <!-- ?===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ?===== BOOTSTRAP ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <!-- ?===== CSS ===== -->
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+
+    <!-- ?==================== HEADER ==================== -->
+    <header class="main-header">
+
+        <!-- ?==================== NAVBAR BOOTSTRAP ==================== -->
+
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <a class="navbar-brand" href="/"><img class="logo-navbar" src="/assets/images/logo-header.png"
+                        alt="logo-e-commerce"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="menu-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-color">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-active" href="/pages/contact/contact.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/about-us/about-us.html">NOSOTROS</a>
+                        </li>
+                    </ul>
+                    <div class="user-info me-2">
+                        <a href="" class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <P class="user-name"></P>
+                        <div class="user-action"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ?==================== NAVBAR BOOTSTRAP END ==================== -->
+
+    </header>
+    <!-- ?==================== HEADER END ==================== -->
+
+    <!-- ?==================== CONTACT SECTION ==================== -->
+    <section class="contact-main">
+        <div class="contact-form-container">
+            <form>
+                <h1>Contáctanos</h1>
+                <div class="contact-form-item">
+                    <label for="inputName">Nombre y apellido</label>
+                    <input type="text" name="nombre" id="inputName" minlength="3" maxlength="20"
+                        placeholder="Nombre completo" required autofocus>
+                </div>
+                <div class="contact-form-item">
+                    <label for="inputEmail">Correo electrónico</label>
+                    <input type="email" name="correo" id="inputEmail" placeholder="example@gmail.com" required
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="contact-form-item">
+                    <label for="inputConsultas">Consulta</label>
+                    <textarea name="consulta" id="inputConsultas" cols="30" rows="10" maxlength="500"
+                        placeholder="Escribe tu consulta"></textarea>
+                </div>
+                <div class="contact-button">
+                    <button type="submit">
+                        Enviar consulta
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-form-container">
+            <div class="contact-map">
+                <h1>Visítanos</h1>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8467.873830053692!2d-65.1932508108219!3d-26.83033333100898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1692146650071!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ?==================== CONTACT SECTION END ==================== -->
+
+    <!-- ?==================== FOOTER ==================== -->
+    <footer class="main-footer text-white px-4">
+        <div class="container-fluid">
+            <nav class="row">
+                <div class="footer-social col-12 col-md-4 d-flex align-items-center justify-content-center">
+                    <a href="https://www.facebook.com/" class="">
+                        <img src="/assets/images/facebook.png" alt="Facebook" class="mr-2">
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/" class="">
+                        <img src="/assets/images/instagram.png" alt="Instagram" class="mr-2">
+                        Instagram
+                    </a>
+                    <a href="https://www.youtube.com/" class="">
+                        <img src="/assets/images/youtube.png" alt="YouTube" class="mr-2">
+                        YouTube
+                    </a>
+                </div>
+                <div class="footer-copy col-12 col-md-4 d-flex">
+                    <img src="/assets/images/logo-header.png" alt="Logo">
+                    Copyright © 2023 CPU-Dealers - Ignacio Valdez
+                </div>
+                <div class="footer-details col-12 col-md-4 d-flex justify-content-center">
+                    <strong>CPU-DEALERS</strong>
+                    <a href="#">Sobre Nosotros</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <strong>CONTACTANOS</strong>
+                    <p>0381-4500113</p>
+                    <p>Lunes a sábados, de 08:00 a 20:00 Hs</p>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <!-- ?==================== FOOTER ==================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="/js/user-info.js"></script>
+</body>
+
+</html>
