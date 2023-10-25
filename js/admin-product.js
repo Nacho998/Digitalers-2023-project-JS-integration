@@ -5,7 +5,7 @@ let editID
 const btn = document.querySelector('.submit-form')
 const btnCancel = document.getElementById('cancel')
 const cancelBtn = document.getElementById('cancel')
-const acceptBtn = document.getElementById('accept')
+const closeModal = document.querySelector('.modal-close')
 const tableBody = document.getElementById('table-body')
 
 paintTable(products)
@@ -94,6 +94,14 @@ function paintTable(array) {
 }
 
 btnCancel.addEventListener('click', () => {
+
+    productsForm.reset()
+    editID = undefined
+    btn.innerText = 'Agregar producto'
+    btn.classList.remove('btn-success')
+})
+
+closeModal.addEventListener('click', () => {
 
     productsForm.reset()
     editID = undefined
